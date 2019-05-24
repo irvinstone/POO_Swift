@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DE464AC26DAC09A01464EA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE460725C759DA9FD376E05 /* AppDelegate.swift */; };
+		2DE467A359661D41C5F5F6EA /* PersonRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE46F5BFAEAB8200A47A0F4 /* PersonRepositoryImplementation.swift */; };
+		2DE46A4BA4859215EAF2BAD2 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE46354C0E3754AA11EFB56 /* ServiceLocator.swift */; };
+		2DE46C28F501728337CB90DD /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE468BBD14B30EF626D307E /* PersonRepository.swift */; };
+		2DE46C70F74E7DC7CCDD4251 /* PersonServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE46BE25D8A89485C555DFF /* PersonServiceFactory.swift */; };
+		2DE46D2709ADB7D7378060CB /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE4674DC135C4FE84D206DE /* PersonService.swift */; };
 		C00B97C72278D404009F32F0 /* Perro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B97C62278D404009F32F0 /* Perro.swift */; };
-		C090BDA92277B0380004136D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C090BDA82277B0380004136D /* AppDelegate.swift */; };
+		C06ED1D922974671003437B8 /* Enviroment.plist in Resources */ = {isa = PBXBuildFile; fileRef = C06ED1D822974671003437B8 /* Enviroment.plist */; };
 		C090BDAB2277B0380004136D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C090BDAA2277B0380004136D /* ViewController.swift */; };
 		C090BDAE2277B0380004136D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C090BDAC2277B0380004136D /* Main.storyboard */; };
 		C090BDB02277B03B0004136D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C090BDAF2277B03B0004136D /* Assets.xcassets */; };
@@ -21,9 +27,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DE460725C759DA9FD376E05 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DE46354C0E3754AA11EFB56 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		2DE4674DC135C4FE84D206DE /* PersonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
+		2DE468BBD14B30EF626D307E /* PersonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		2DE46BE25D8A89485C555DFF /* PersonServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonServiceFactory.swift; sourceTree = "<group>"; };
+		2DE46F5BFAEAB8200A47A0F4 /* PersonRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepositoryImplementation.swift; sourceTree = "<group>"; };
 		C00B97C62278D404009F32F0 /* Perro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perro.swift; sourceTree = "<group>"; };
+		C06ED1D822974671003437B8 /* Enviroment.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Enviroment.plist; sourceTree = "<group>"; };
 		C090BDA52277B0380004136D /* Real World POO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Real World POO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C090BDA82277B0380004136D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C090BDAA2277B0380004136D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C090BDAD2277B0380004136D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C090BDAF2277B03B0004136D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,10 +59,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DE46371E71722284C27B368 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2DE468BBD14B30EF626D307E /* PersonRepository.swift */,
+				2DE46930595B33FA5AD08BAB /* Implementations */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2DE46479D8492F19BC16167A /* Registry */ = {
+			isa = PBXGroup;
+			children = (
+				C06ED1D822974671003437B8 /* Enviroment.plist */,
+				2DE46354C0E3754AA11EFB56 /* ServiceLocator.swift */,
+			);
+			path = Registry;
+			sourceTree = "<group>";
+		};
+		2DE46930595B33FA5AD08BAB /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				2DE46F5BFAEAB8200A47A0F4 /* PersonRepositoryImplementation.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		2DE46D75713986FD7C5D4F8D /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				2DE46BE25D8A89485C555DFF /* PersonServiceFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		2DE46F208845F0A46A6F51A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2DE4674DC135C4FE84D206DE /* PersonService.swift */,
+				2DE46D75713986FD7C5D4F8D /* Factory */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C06ED1DB22985832003437B8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C090BDBA2277B0860004136D /* Entitys */,
+				C0DB788B2278DFDE009749F1 /* Protocols */,
+				2DE46F208845F0A46A6F51A9 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C06ED1DC22985A30003437B8 /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				C06ED1DD22985B8B003437B8 /* Models */,
+				2DE46371E71722284C27B368 /* Repository */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		C06ED1DD22985B8B003437B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C06ED1DF22985CEE003437B8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C090BDB12277B03B0004136D /* LaunchScreen.storyboard */,
+				C090BDAC2277B0380004136D /* Main.storyboard */,
+				C090BDAA2277B0380004136D /* ViewController.swift */,
+				2DE460725C759DA9FD376E05 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C06ED1E022985E3A003437B8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C06ED1E1229890EC003437B8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C090BDAF2277B03B0004136D /* Assets.xcassets */,
+				C06ED1DF22985CEE003437B8 /* Main */,
+				C06ED1E022985E3A003437B8 /* Search */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		C090BD9C2277B0380004136D = {
 			isa = PBXGroup;
 			children = (
-				C0ED824E22789613007F236D /* Modules */,
 				C090BDA72277B0380004136D /* Real World POO */,
 				C090BDA62277B0380004136D /* Products */,
 			);
@@ -67,15 +175,11 @@
 		C090BDA72277B0380004136D /* Real World POO */ = {
 			isa = PBXGroup;
 			children = (
-				C0DB78902278EA34009749F1 /* Models */,
-				C0DB788B2278DFDE009749F1 /* Protocols */,
-				C090BDBA2277B0860004136D /* Entitys */,
-				C090BDA82277B0380004136D /* AppDelegate.swift */,
-				C090BDAA2277B0380004136D /* ViewController.swift */,
-				C090BDAC2277B0380004136D /* Main.storyboard */,
-				C090BDAF2277B03B0004136D /* Assets.xcassets */,
-				C090BDB12277B03B0004136D /* LaunchScreen.storyboard */,
 				C090BDB42277B03B0004136D /* Info.plist */,
+				C06ED1E1229890EC003437B8 /* Presentation */,
+				2DE46479D8492F19BC16167A /* Registry */,
+				C06ED1DB22985832003437B8 /* Core */,
+				C06ED1DC22985A30003437B8 /* Infraestructure */,
 			);
 			path = "Real World POO";
 			sourceTree = "<group>";
@@ -83,6 +187,7 @@
 		C090BDBA2277B0860004136D /* Entitys */ = {
 			isa = PBXGroup;
 			children = (
+				C0DB78922278EC1F009749F1 /* Life.swift */,
 				C00B97C62278D404009F32F0 /* Perro.swift */,
 				C0DB78892278DCE4009749F1 /* Gato.swift */,
 				C0DB788E2278E78F009749F1 /* Persona.swift */,
@@ -97,21 +202,6 @@
 				C0DB788C2278E095009749F1 /* Hombre.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		C0DB78902278EA34009749F1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C0DB78922278EC1F009749F1 /* Life.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C0ED824E22789613007F236D /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C090BDB32277B03B0004136D /* LaunchScreen.storyboard in Resources */,
+				C06ED1D922974671003437B8 /* Enviroment.plist in Resources */,
 				C090BDB02277B03B0004136D /* Assets.xcassets in Resources */,
 				C090BDAE2277B0380004136D /* Main.storyboard in Resources */,
 			);
@@ -189,10 +280,15 @@
 				C0DB788D2278E095009749F1 /* Hombre.swift in Sources */,
 				C0DB788A2278DCE4009749F1 /* Gato.swift in Sources */,
 				C00B97C72278D404009F32F0 /* Perro.swift in Sources */,
-				C090BDA92277B0380004136D /* AppDelegate.swift in Sources */,
 				C0DB78932278EC1F009749F1 /* Life.swift in Sources */,
 				C090BDBC2277B0B30004136D /* Animal.swift in Sources */,
 				C0DB788F2278E78F009749F1 /* Persona.swift in Sources */,
+				2DE46D2709ADB7D7378060CB /* PersonService.swift in Sources */,
+				2DE46A4BA4859215EAF2BAD2 /* ServiceLocator.swift in Sources */,
+				2DE464AC26DAC09A01464EA5 /* AppDelegate.swift in Sources */,
+				2DE46C70F74E7DC7CCDD4251 /* PersonServiceFactory.swift in Sources */,
+				2DE46C28F501728337CB90DD /* PersonRepository.swift in Sources */,
+				2DE467A359661D41C5F5F6EA /* PersonRepositoryImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

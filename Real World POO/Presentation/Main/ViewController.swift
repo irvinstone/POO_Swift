@@ -10,11 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private lazy var serviceLocator = ServiceLocator()
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("running")
-        // Do any additional setup after loading the view.
-        Life.iniciarCicloVida()
+        Life.iniciarCicloVida(serviceLocator: serviceLocator)
     }
 
 
